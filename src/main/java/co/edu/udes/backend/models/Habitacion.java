@@ -30,7 +30,7 @@ public class Habitacion {
     @OneToMany(
             targetEntity = Reserva.class,
             fetch = FetchType.LAZY,
-            mappedBy = "client"
+            mappedBy = "room"
     )
     private List<Reserva> reservations;
 }
