@@ -1,10 +1,11 @@
 package co.edu.udes.backend.dto;
 
-import co.edu.udes.backend.models.Cliente;
-import co.edu.udes.backend.models.Habitacion;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import lombok.*;
 
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ReservaDTO {
 
     private Long id;
