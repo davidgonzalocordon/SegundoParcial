@@ -15,7 +15,6 @@ public class ClienteDTO {
     private String phone;
     private String address;
 
-    private List<Long> groupIds;
-    private List<Long> careerIds;
+    private List<Long> reservationsIds;
 }
 
