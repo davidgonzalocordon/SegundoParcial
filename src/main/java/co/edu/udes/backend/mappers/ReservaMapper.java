@@ -11,6 +11,7 @@ import java.util.List;
         uses = {
                 ReservaMapper.class,
                 HabitacionMapper.class,
+                ClienteMapper.class,
         })
 public interface ReservaMapper {
 

@@ -2,13 +2,12 @@ package co.edu.udes.backend.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+@Builder
 @Entity
 @Table(name = "clients")
 public class Cliente {
@@ -33,7 +32,7 @@ public class Cliente {
     @OneToMany(
             targetEntity = Reserva.class,
             fetch = FetchType.LAZY,
-            mappedBy = "client"
+            mappedBy = "room"
     )
     private List<Reserva> reservations;
 

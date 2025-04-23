@@ -17,5 +17,5 @@ public class HabitacionDTO {
     private String floorRoom;
     private int numberBeds;
 
-    private List<Long> reservationIds;
+    private List<Long> reservationsIds;
 }
